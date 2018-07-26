@@ -1,0 +1,12 @@
+<h1><%= @building.name %></h1>
+
+<ul>
+  <li>Country: <%= @building.country %></li>
+  <li>address: <%= @building.address %></li>
+  <li>Rent Per Floor: <%= @building.rent_per_floor %></li>
+  <li>Number Of Floors: <%= @building.number_of_floors %></li>
+</ul>
+
+
+
+<%= button_to "Delete Building", @building, :method => :delete %>

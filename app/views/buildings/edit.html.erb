@@ -1,0 +1,19 @@
+<h1>Building Form</h1>
+<%= form_for @building do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+
+  <%= f.label :country %>
+  <%= f.text_field :country %>
+
+  <%= f.label :rent_per_floor %>
+  <%= f.number_field :rent_per_floor %>
+
+  <%= f.label :number_of_floors %>
+  <%= f.number_field :number_of_floors %>
+
+  <%= f.submit %>
+<% end %>
